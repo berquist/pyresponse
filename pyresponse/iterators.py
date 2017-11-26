@@ -485,6 +485,7 @@ class EigSolver(Solver):
         norm = 1 / np.sqrt(norm)
         return (x*norm).flatten(), (y*norm).flatten()
 
+
 class EigSolverTDA(EigSolver):
 
     def __init__(self, mocoeffs, moenergies, occupations, *args, **kwargs):
